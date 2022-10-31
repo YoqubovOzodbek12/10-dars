@@ -1,0 +1,55 @@
+header {
+    background-color: #014E56;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    padding: 77px 0px 0px 0px;
+}
+
+.header__nav {
+    margin-left: 80px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    margin-left: 40px;
+}
+
+.header__item-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.header__tel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 9px 32px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-right: 0px;
+}
+
+
+@media only screen and (max-width:729px) {
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__tel {
+        display: none;
+    }
+
+
+}

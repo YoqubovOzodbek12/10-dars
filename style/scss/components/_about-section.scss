@@ -1,0 +1,122 @@
+.about {
+    position: relative;
+    background-color: #004047;
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 147px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../../img/about-left.svg");
+        top: 0;
+    }
+
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../../img/about-right.svg");
+        right: 0;
+        bottom: -100px;
+    }
+
+}
+
+.about__title {
+    width: 950px;
+    padding-top: 140px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+
+    &-desc {
+        color: #79C8C7;
+    }
+}
+
+
+.about__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__list-item {
+    width: 350px;
+    padding-top: 90px;
+    margin-left: 20px;
+}
+
+.about__item-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.about__item-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+}
+
+.about__item-desc {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.about__item-img {
+    margin-top: 32px;
+    margin-left: 150px;
+}
+
+
+@media only screen and (max-width:1150px) {
+    .about__title {
+        width: 550px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .about__list-item {
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width:729px) {
+
+    .about__title {
+        width: 300px;
+        text-align: center;
+    }
+
+    .about__list {
+        padding-bottom: 200px;
+    }
+
+    .about__item-img {
+        margin-top: 32px;
+        margin-left: 120px;
+    }
+
+
+}

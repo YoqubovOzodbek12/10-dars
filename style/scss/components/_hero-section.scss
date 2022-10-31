@@ -1,0 +1,145 @@
+.hero {
+    position: relative;
+    background-color: #014E56;
+    padding-top: 250px;
+    padding-bottom: 193px;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-image: url("../../../img/hero-left.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.hero__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.hero__title {
+    width: 635px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+
+    &-desc {
+        color: #F67E7E;
+    }
+}
+
+.hero__text {
+    position: relative;
+    width: 445px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 90px;
+    color: #FFFFFF;
+
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: #79C8C7;
+        top: -79px;
+    }
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 358px;
+        height: 200px;
+        background-image: url("../../../img/hero-right.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 380px;
+        left: 70px;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+
+    .hero {
+        &::before {
+            display: none;
+        }
+    }
+
+    .hero__box {
+        flex-wrap: wrap;
+        padding-bottom: 45px;
+    }
+
+    .hero__title {
+        width: 350px;
+        text-align: center;
+        text-align: center;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 56px;
+        margin-left: 180px;
+    }
+
+    .hero__text {
+        width: 457px;
+        margin: 0 auto;
+        margin-top: 24px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            left: 0;
+            right: 0;
+            top: 223px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width:729px) {
+
+    .hero {
+        padding-top: 80px;
+    }
+
+
+    .hero__title {
+        width: 220px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero__text {
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
+
+        &::before {
+            width: 280px;
+            top: 303px;
+        }
+    }
+
+}
